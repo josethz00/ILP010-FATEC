@@ -1,13 +1,14 @@
 #include <stdio.h>
-#include <math.h>
-#define PI 3.14159
- 
-int main() {
-	float raio, area;
-	printf("Digite o raio em metros: "); 
-	scanf("%f", &raio);
-	area = PI * (pow(raio, 2));
-	printf("Área: %.2f m² \n", area);
- 
-	return 0;
+
+int main()
+{
+  float celsius, fahrenheit;
+
+  printf("Entre a temperatura em Fahrenheit: ");
+  scanf("%f", &fahrenheit);
+
+  celsius = (fahrenheit - 32) * 5 / 9;
+  printf("%.3f Fahrenheit = %.2f Celsius", fahrenheit, celsius);
+
+  return 0;
 }

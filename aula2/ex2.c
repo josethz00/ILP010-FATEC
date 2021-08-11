@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-int main()
-{
-  float celsius, fahrenheit;
+int main(void) {
+  float imc, peso, altura;
+  printf("Digite peso e altura: ");
+  scanf("%f   %f", &peso, &altura);
 
-  printf("Entre a temperatura em Fahrenheit: ");
-  scanf("%f", &fahrenheit);
-
-  celsius = (fahrenheit - 32) * 5 / 9;
-  printf("%.3f Fahrenheit = %.2f Celsius", fahrenheit, celsius);
+  imc = peso / (altura * altura);
+  printf("Seu IMC: %.3f", imc);
 
   return 0;
 }
